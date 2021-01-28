@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2018561313824359109}
   - component: {fileID: 2018561313824359108}
+  - component: {fileID: 4618101976699459806}
   m_Layer: 0
   m_Name: Victim
   m_TagString: Untagged
@@ -140,6 +141,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d682a212c26f65b44ad57343a8fb65bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRange: 10
-  movementSpeed: 5
+  sightRange: 20
+  movementSpeed: 12
   currentState: 1
+--- !u!114 &4618101976699459806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018561313824359110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339e0f7f7e2c2054a9204f14638382f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
