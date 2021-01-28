@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d682a212c26f65b44ad57343a8fb65bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRange: 20
-  movementSpeed: 12
+  sightRange: 10
+  movementSpeed: 5
   currentState: 1
 --- !u!114 &4618101976699459806
 MonoBehaviour:
