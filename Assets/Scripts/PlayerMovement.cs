@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private void MovePlayer() {
         Vector3 currentPosition = transform.position;
-        transform.position = new Vector3(currentPosition.x + xAxis * moveSpeed * Time.deltaTime, currentPosition.y, currentPosition.z + zAxis * moveSpeed * Time.deltaTime);
+        Vector3 moveDirection = new Vector3(currentPosition.x + xAxis * moveSpeed * Time.deltaTime, currentPosition.y, currentPosition.z + zAxis * moveSpeed * Time.deltaTime);
+        moveDirection.Normalize();
+        transform.position = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
     }
 }
