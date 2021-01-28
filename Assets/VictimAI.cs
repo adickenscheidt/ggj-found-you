@@ -39,8 +39,10 @@ public class VictimAI : MonoBehaviour
                 transform.Translate(awayFromPlayer * (Time.fixedDeltaTime * movementSpeed));
                 break;
             case VictimAIState.RunningToHide:
+                // When object to hide in is in range, try to run towards it and hide
                 break;
             case VictimAIState.Hidden:
+                // While inside object
                 break;
             case VictimAIState.Dead:
                 break;
