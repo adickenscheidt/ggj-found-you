@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     private int xAxis;
-    private int yAxis;
+    private int zAxis;
     [SerializeField] private float moveSpeed;
 
     private void Update() {
@@ -12,11 +12,11 @@ public class PlayerMovement : MonoBehaviour {
 
     private void GetMovementInput() {
         xAxis = (int)Input.GetAxisRaw("Horizontal");
-        yAxis = (int)Input.GetAxisRaw("Vertical");
+        zAxis = (int)Input.GetAxisRaw("Vertical");
     }
 
     private void MovePlayer() {
-        Vector2 currentPosition = transform.position;
-        transform.position = new Vector2(currentPosition.x + xAxis * moveSpeed * Time.deltaTime, currentPosition.y + yAxis * moveSpeed * Time.deltaTime);
+        Vector3 currentPosition = transform.position;
+        transform.position = new Vector3(currentPosition.x + xAxis * moveSpeed * Time.deltaTime, currentPosition.y, currentPosition.z + zAxis * moveSpeed * Time.deltaTime);
     }
 }
