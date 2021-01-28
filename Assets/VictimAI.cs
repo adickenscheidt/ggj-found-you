@@ -35,7 +35,9 @@ public class VictimAI : MonoBehaviour
             case VictimAIState.Fleeing:
                 if (!IsPlayerInRange())
                     currentState = VictimAIState.Idle;
-                var awayFromPlayer = (transform.position - _player.transform.position).normalized;
+                var transformPosition = transform.position - _player.transform.position;
+                transformPosition.y = 0;
+                var awayFromPlayer = transformPosition.normalized;
                 transform.Translate(awayFromPlayer * (Time.fixedDeltaTime * movementSpeed));
                 break;
             case VictimAIState.RunningToHide:
