@@ -1,13 +1,24 @@
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour {
+    [SerializeField] private float moveSpeed;
+    private Animator playerAnimator;
     private int xAxis;
     private int zAxis;
-    [SerializeField] private float moveSpeed;
+
+    private void Start() {
+        Initialize();
+    }
+
+    private void Initialize() {
+        playerAnimator = GetComponent<Animator>();
+    }
 
     private void Update() {
         GetMovementInput();
         MovePlayer();
+        SetMovementAnimator();
     }
 
     private void GetMovementInput() {
@@ -16,9 +27,16 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void MovePlayer() {
-        Vector3 currentPosition = transform.position;
-        Vector3 moveDirection = new Vector3(xAxis, 0, zAxis);
-        moveDirection.Normalize();
-        transform.position = new Vector3(currentPosition.x + moveDirection.x * moveSpeed * Time.deltaTime, currentPosition.y + moveDirection.y * moveSpeed * Time.deltaTime, currentPosition.z + moveDirection.z * moveSpeed * Time.deltaTime);
+        Vector3 moveDirection = new Vector3(xAxis, 0, zAxis) * moveSpeed * Time.deltaTime;
+        if (moveDirection.magnitude == 0) {
+            return;
+        } else if (moveDirection.magnitude > 1) {
+            moveDirection.Normalize();
+        }
+        transform.Translate(moveDirection, Space.World);
+    }
+
+    private void SetMovementAnimator() {
+        playerAnimator.SetInteger("MoveDirection", zAxis);
     }
 }
