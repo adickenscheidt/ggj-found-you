@@ -7,9 +7,6 @@ public class TutorialUI : MonoBehaviour
     [SerializeField]
     GameObject tutorialUi;
 
-    //tells the PlayerLighting class that the user pressed the play button
-    public bool hasStarted = false;
-
     private void Awake()
     {
         tutorialUi.gameObject.SetActive(true);
@@ -19,7 +16,6 @@ public class TutorialUI : MonoBehaviour
 
     public void HideTutorialCanvas()
     {
-        hasStarted = true;
         tutorialUi.gameObject.SetActive(false);
         Cursor.visible = false;
         Time.timeScale = 1;
