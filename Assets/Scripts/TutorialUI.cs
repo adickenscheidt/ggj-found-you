@@ -9,6 +9,7 @@ public class TutorialUI : MonoBehaviour
 
     private void Awake()
     {
+        tutorialUi.gameObject.SetActive(true);
         Cursor.visible = true;
         Time.timeScale = 0;
     }
