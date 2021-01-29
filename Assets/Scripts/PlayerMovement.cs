@@ -55,11 +55,13 @@ public class PlayerMovement : MonoBehaviour {
     /// Sets the Animator Properties so the Player has the correct Animation.
     /// </summary>
     private void SetMovementAnimator() {
-        playerAnimator.SetInteger("MoveDirection", zAxis);
-        if (xAxis != 0 || zAxis != 0) {
-            playerAnimator.SetBool("IsMoving", true);
-        } else {
-            playerAnimator.SetBool("IsMoving", false);
+        if (Time.timeScale != 0) {
+            playerAnimator.SetInteger("MoveDirection", zAxis);
+            if (xAxis != 0 || zAxis != 0) {
+                playerAnimator.SetBool("IsMoving", true);
+            } else {
+                playerAnimator.SetBool("IsMoving", false);
+            }
         }
     }
 }
