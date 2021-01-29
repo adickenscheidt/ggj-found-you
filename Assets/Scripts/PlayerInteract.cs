@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    public float interactRange = 0.5f;
+    public float interactRange = 2f;
     private Interactable _currentInteractable;
 
     void Start()
@@ -11,8 +11,22 @@ public class PlayerInteract : MonoBehaviour
 
     void Update()
     {
-        if (FindClosestInteractable(out var foundInteractable) && foundInteractable != _currentInteractable)
-            SwitchToNewInteractable(foundInteractable);
+        if (FindClosestInteractable(out var foundInteractable))
+        {
+            if(foundInteractable != _currentInteractable)
+                SwitchToNewInteractable(foundInteractable);
+        }
+        else
+        {
+            if(_currentInteractable != null)
+                SwitchToNewInteractable(null);
+                
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && _currentInteractable != null)
+        {
+            _currentInteractable.Interact();
+        }
     }
 
     private void SwitchToNewInteractable(Interactable foundInteractable)

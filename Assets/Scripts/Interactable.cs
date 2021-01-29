@@ -15,15 +15,21 @@ public class Interactable : MonoBehaviour
     {
     }
 
-    // private void OnDrawGizmos()
-    // {
-    //     if (_isInteractable)
-    //         Gizmos.DrawSphere(transform.position + Vector3.up, 0.5f);
-    // }
+    private void OnDrawGizmos()
+    {
+        if (_isInteractable)
+            Gizmos.DrawSphere(transform.position + Vector3.up * 2, 0.5f);
+    }
 
     public void HightlightAsInteractable(bool highlight)
     {
         _isInteractable = highlight;
         // TODO: Outline verändern oder so
+    }
+
+    public void Interact()
+    {
+        // TODO: Interact
+        Debug.Log("Interact with me senpai!");
     }
 }
