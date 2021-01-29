@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class HideObject : MonoBehaviour
 {
-    private List<VictimAI> _hidingVictims;
+    private List<GameObject> _hidingVictims;
 
     // Start is called before the first frame update
     void Start()
     {
-        _hidingVictims = new List<VictimAI>();
+        _hidingVictims = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class HideObject : MonoBehaviour
         
     }
 
-    public void HideIn(VictimAI hidingVictim)
+    public void HideIn(GameObject hidingVictim)
     {
         _hidingVictims.Add(hidingVictim);
     }
