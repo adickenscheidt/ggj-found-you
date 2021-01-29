@@ -12,7 +12,10 @@ public enum VictimAIState
 
 public class VictimAI : MonoBehaviour
 {
-    public float sightRange;
+    public float runStartRange = 10f;
+    public float runStopRange = 20f;
+    public float runToHideRange = 15f;
+
     public float movementSpeed;
     [SerializeField] private VictimAIState currentState = VictimAIState.Fleeing;
     public bool IsHidden => currentState == VictimAIState.Hidden;
@@ -31,17 +34,17 @@ public class VictimAI : MonoBehaviour
         switch (currentState)
         {
             case VictimAIState.Idle:
-                if (IsPlayerInRange())
+                if (IsPlayerInRange(runStartRange))
                     currentState = VictimAIState.Fleeing;
                 break;
             case VictimAIState.Fleeing:
-                if (!IsPlayerInRange())
+                if (!IsPlayerInRange(runStopRange))
                 {
                     currentState = VictimAIState.Idle;
                     break;
                 }
 
-                if (TryFindObjectToHide())
+                if (TryFindObjectToHide(runToHideRange))
                 {
                     currentState = VictimAIState.RunningToHide;
                     break;
@@ -98,12 +101,12 @@ public class VictimAI : MonoBehaviour
         transform.Translate(awayFromPlayer * (Time.fixedDeltaTime * movementSpeed), Space.World);
     }
 
-    private bool TryFindObjectToHide()
+    private bool TryFindObjectToHide(float hideRange)
     {
         if (_targetHideObject != null)
             return true;
         var hideObjects = new Collider[5];
-        var size = Physics.OverlapSphereNonAlloc(transform.position, sightRange, hideObjects);
+        var size = Physics.OverlapSphereNonAlloc(transform.position, hideRange, hideObjects);
         foreach (var currHideObject in hideObjects)
         {
             var hideObject = currHideObject?.GetComponent<HideObject>();
@@ -117,13 +120,13 @@ public class VictimAI : MonoBehaviour
         return false;
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(transform.position, sightRange);
-    }
+    // private void OnDrawGizmosSelected()
+    // {
+    //     Gizmos.DrawWireSphere(transform.position, runStartRange);
+    // }
 
-    private bool IsPlayerInRange()
+    private bool IsPlayerInRange(float range)
     {
-        return (_player.transform.position - transform.position).magnitude < sightRange;
+        return (_player.transform.position - transform.position).magnitude < range;
     }
 }

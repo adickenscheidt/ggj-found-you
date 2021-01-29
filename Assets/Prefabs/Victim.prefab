@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sightRange: 10
-  movementSpeed: 5
+  movementSpeed: 17
   currentState: 1
 --- !u!114 &4618101976699459806
 MonoBehaviour:
