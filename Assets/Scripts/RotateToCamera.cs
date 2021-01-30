@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class RotateToCamera : MonoBehaviour {
-    void Update() {
+    void Start() {
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Camera.main.transform.rotation, 100f);
     }
 }

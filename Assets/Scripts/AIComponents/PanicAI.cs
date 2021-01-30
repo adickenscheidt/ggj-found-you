@@ -18,18 +18,13 @@ public class PanicAI : BaseAIComponent
     public override void StartAi()
     {
         base.StartAi();
+        _walkingPoints.Clear();
         _walkingPoints.Add(GetParentTransform().position - (Vector3.left * 2));
         _walkingPoints.Add(GetParentTransform().position - (Vector3.back * 2));
         _walkingPoints.Add(GetParentTransform().position - (Vector3.right * 2));
         _walkingPoints.Add(GetParentTransform().position - (Vector3.forward * 2));
         _currentWalkingPoint = _walkingPoints[0];
         _currentWalkingPointIndex = 0;
-    }
-
-    public override void StopAi()
-    {
-        base.StopAi();
-        _walkingPoints.Clear();
     }
 
     public override void AIUpdate()

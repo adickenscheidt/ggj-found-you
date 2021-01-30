@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class VictimDeath : MonoBehaviour
 {
     //Can be called from anywhere, destroys the player sprite and instantiates blood splatter on that spot (+sound)
@@ -28,8 +27,6 @@ public class VictimDeath : MonoBehaviour
         Instantiate(bloodSplatter, this.transform.position, Quaternion.identity);
         //Play Death sound
         audioSource.PlayOneShot(deathSoundsVictim[Random.Range(0, deathSoundsVictim.Length)]);
-        //Play death animation
-
         //Disables Victim
         this.gameObject.SetActive(false);
     }
