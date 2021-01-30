@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4769005790170687901}
   - component: {fileID: -6721216545280363223}
+  - component: {fileID: 8056201157886124081}
   m_Layer: 0
   m_Name: ItemBox
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 57347c2c13680044eb8ab97ec5d2b303, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8056201157886124081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925307247541294835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339e0f7f7e2c2054a9204f14638382f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
