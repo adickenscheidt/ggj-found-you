@@ -3,23 +3,29 @@
 public class FleeAI : BaseAIComponent
 {
     public override string AiName => "Fleeing";
+    public override FinishMode FinishMode => FinishMode.PointReached;
+
     public float fleeStartRange = 10f;
+    public float fleeDistance = 5f;
 
     public override int GetAiValue(string currentAiName)
     {
         return IsPlayerInRange(fleeStartRange) ? 70 : 0;
     }
 
-    public override void AIUpdate()
+    public override void StartAi()
     {
-        FleeFromPlayer();
+        base.StartAi();
+        if (!RunAway())
+            Finish();
     }
 
-    private void FleeFromPlayer()
+    private bool RunAway()
     {
         var transformPosition = GetParentTransform().position - player.transform.position;
         transformPosition.y = 0;
-        var awayFromPlayer = transformPosition.normalized;
-        GetParentTransform().Translate(awayFromPlayer * (Time.fixedDeltaTime * victim.movementSpeed), Space.World);
+        var awayFromPlayer = GetParentTransform().position + transformPosition.normalized * fleeDistance;
+
+        return WalkToPoint(awayFromPlayer);
     }
 }

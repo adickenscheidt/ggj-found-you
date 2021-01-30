@@ -3,6 +3,7 @@
 public class RunToHideAI : BaseAIComponent
 {
     public override string AiName => "RunToHide";
+    public override FinishMode FinishMode => FinishMode.PointReached;
     public float hideObjectSightRange = 10f;
 
     private HideObject _targetHideObject;
@@ -15,18 +16,27 @@ public class RunToHideAI : BaseAIComponent
         return TryFindObjectToHide(hideObjectSightRange) ? 80 : 0;
     }
 
+    public override void StartAi()
+    {
+        base.StartAi();
+        WalkToPoint(_targetHideObject.transform.position);
+    }
+
     public override void StopAi()
     {
         base.StopAi();
         _targetHideObject = null;
     }
 
+    public override void Finish()
+    {
+        base.Finish();
+        if(HideObjectInRange())
+            HideInHideObject();
+    }
+
     public override void AIUpdate()
     {
-        if (HideObjectInRange())
-            HideInHideObject();
-        else
-            RunTowardsHideObject();
     }
 
     private bool TryFindObjectToHide(float hideRange)
@@ -46,14 +56,6 @@ public class RunToHideAI : BaseAIComponent
         }
 
         return false;
-    }
-
-    private void RunTowardsHideObject()
-    {
-        var transformPosition = _targetHideObject.transform.position - GetParentTransform().position;
-        transformPosition.y = 0;
-        GetParentTransform().Translate(transformPosition.normalized * (Time.fixedDeltaTime * victim.movementSpeed),
-            Space.World);
     }
 
     private void HideInHideObject()

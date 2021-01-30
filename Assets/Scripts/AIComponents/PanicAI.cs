@@ -4,6 +4,8 @@ using UnityEngine;
 public class PanicAI : BaseAIComponent
 {
     public override string AiName => "Panic";
+    public override FinishMode FinishMode => FinishMode.TimePassed;
+    public override float FinishTime => 10f;
     [SerializeField] private List<Vector3> _walkingPoints = new List<Vector3>();
     [SerializeField] private Vector3 _currentWalkingPoint;
     private int _currentWalkingPointIndex;
@@ -11,11 +13,6 @@ public class PanicAI : BaseAIComponent
     public override int GetAiValue(string currentAiName)
     {
         return IsPlayerInRange(15f) ? 80 : 0;
-    }
-
-    public override float GetExecutionTime()
-    {
-        return 10f;
     }
 
     public override void StartAi()
