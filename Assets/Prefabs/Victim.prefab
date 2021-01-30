@@ -107,8 +107,8 @@ GameObject:
   - component: {fileID: 2018561313824359109}
   - component: {fileID: 4618101976699459806}
   - component: {fileID: 6751852110188725341}
-  - component: {fileID: 2361756092121969195}
-  - component: {fileID: -6288364717592878968}
+  - component: {fileID: 5026838608389369271}
+  - component: {fileID: 5868725121435590027}
   m_Layer: 0
   m_Name: Victim
   m_TagString: Victim
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc0e78a252d35e4abb8a3fe70b1cc00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2361756092121969195
+--- !u!114 &5026838608389369271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodSplatter: {fileID: 0}
   deathSoundsVictim: []
---- !u!82 &-6288364717592878968
+--- !u!82 &5868725121435590027
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

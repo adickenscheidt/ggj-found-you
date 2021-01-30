@@ -19,6 +19,7 @@ public class VictimDeath : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        this.gameObject.SetActive(true);
     }
 
     public void VictimDies()
