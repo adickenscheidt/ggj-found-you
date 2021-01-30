@@ -155,7 +155,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "Andr\xE9 Dickenscheidt - Programming\r\n\r\nChloe Jinx Duscha - Programming
+    and emotional support\r\n\r\nFelipe Versick - Character Art and Animation\r\n\r\nHai
+    Lam Dang - Background and Asset Art\r\n\r\nLaslo Scotton - Programming and Ui\r\n\r\nLukas
+    Jark - Programming\r\n\r\nBrainstorming:\r\nAndr\xE9 Dickenscheidt -- Chloe Jinx
+    Duscha\r\nFelipe Versick -- Hai Lam Dang\r\nLaslo Scotton -- Lukas Jark -- Felix\r\n\r\n\r\nAudio
+    from Unity Assetpack:\r\n\"Ultimate Sound FX Bundle\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -188,7 +193,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
