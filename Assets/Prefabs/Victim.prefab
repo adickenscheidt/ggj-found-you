@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 5868725121435590027}
   - component: {fileID: 2660434623168834459}
   - component: {fileID: 1510540785279734454}
+  - component: {fileID: 5945178495768539047}
   m_Layer: 0
   m_Name: Victim
   m_TagString: Victim

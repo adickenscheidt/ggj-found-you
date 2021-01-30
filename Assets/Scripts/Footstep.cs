@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Footstep : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
+
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -12,7 +11,6 @@ public class Footstep : MonoBehaviour
 
     void Update()
     {
-        
     }
 
     public void Show()
