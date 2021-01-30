@@ -5,15 +5,19 @@ public abstract class BaseInteractable : MonoBehaviour
 {
     private bool _isInteractable;
     private Color _normalColor;
-    private Color _interactColor = new Color(0.7f, 0, 0);
-    private SpriteRenderer _spriteRenderer;
+    private readonly Color _interactColor = new Color(0.7f, 0, 0);
+    protected SpriteRenderer SpriteRenderer;
+    protected Victim Victim;
 
     // Start is called before the first frame update
     public virtual void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        if (_spriteRenderer == null)
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        if (SpriteRenderer == null)
             Debug.LogError($"No SpriteRenderer found on {this.name}!");
+        Victim = GetComponent<Victim>();
+        if (Victim == null)
+            Debug.LogError($"No Victim component found on {this.name}!");
     }
 
     // Update is called once per frame
@@ -23,7 +27,7 @@ public abstract class BaseInteractable : MonoBehaviour
 
     public void HightlightAsInteractable(bool highlight)
     {
-        if (_spriteRenderer == null)
+        if (SpriteRenderer == null)
             return;
         if (_isInteractable == highlight)
             return;
@@ -31,11 +35,11 @@ public abstract class BaseInteractable : MonoBehaviour
         _isInteractable = highlight;
         if (_isInteractable)
         {
-            _normalColor = _spriteRenderer.color;
-            _spriteRenderer.color = _interactColor;
+            _normalColor = SpriteRenderer.color;
+            SpriteRenderer.color = _interactColor;
         }
         else
-            _spriteRenderer.color = _normalColor;
+            SpriteRenderer.color = _normalColor;
     }
 
     public abstract void Interact();

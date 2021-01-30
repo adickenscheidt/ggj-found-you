@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 21e9bf47408ab6c4a8ddf09a34abb17c, type: 2}
+--- !u!1 &21686693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21686694}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &21686694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21686693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.312778, y: -0.78526497, z: -0.76729393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &35341782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1619,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11c775b725947fd961fd483d68a6a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &977018114
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977018108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.78
+  m_Center: {x: 0, y: 2.78, z: 0}
 --- !u!212 &977018117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1860,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5026838608389369271, guid: 112e206886387224c9e5c25806290a3d, type: 3}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 21686693}
     m_RemovedComponents:
     - {fileID: 6751852110188725341, guid: 112e206886387224c9e5c25806290a3d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 112e206886387224c9e5c25806290a3d, type: 3}
