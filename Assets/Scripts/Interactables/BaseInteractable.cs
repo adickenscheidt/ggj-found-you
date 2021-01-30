@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class BaseInteractable : MonoBehaviour
 {
     private bool _isInteractable;
     private Color _normalColor;
@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         if (_spriteRenderer == null)
@@ -38,9 +38,5 @@ public class Interactable : MonoBehaviour
             _spriteRenderer.color = _normalColor;
     }
 
-    public void Interact()
-    {
-        // TODO: Interact
-        Debug.Log("Interact with me senpai!");
-    }
+    public abstract void Interact();
 }
