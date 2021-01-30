@@ -4,10 +4,16 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     private bool _isInteractable;
+    private Color _normalColor;
+    private Color _interactColor = new Color(0.7f, 0, 0);
+    private SpriteRenderer _spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        if (_spriteRenderer == null)
+            Debug.LogError($"No SpriteRenderer found on {this.name}!");
     }
 
     // Update is called once per frame
@@ -15,16 +21,21 @@ public class Interactable : MonoBehaviour
     {
     }
 
-    private void OnDrawGizmos()
-    {
-        if (_isInteractable)
-            Gizmos.DrawSphere(transform.position + Vector3.up * 2, 0.5f);
-    }
-
     public void HightlightAsInteractable(bool highlight)
     {
+        if (_spriteRenderer == null)
+            return;
+        if (_isInteractable == highlight)
+            return;
+
         _isInteractable = highlight;
-        // TODO: Outline verändern oder so
+        if (_isInteractable)
+        {
+            _normalColor = _spriteRenderer.color;
+            _spriteRenderer.color = _interactColor;
+        }
+        else
+            _spriteRenderer.color = _normalColor;
     }
 
     public void Interact()

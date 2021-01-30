@@ -35,10 +35,6 @@ public class RunToHideAI : BaseAIComponent
             HideInHideObject();
     }
 
-    public override void AIUpdate()
-    {
-    }
-
     private bool TryFindObjectToHide(float hideRange)
     {
         if (_targetHideObject != null)
