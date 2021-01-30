@@ -18,6 +18,7 @@ public class PlayerAbilityDeathHole : MonoBehaviour
 
     private void CreateTrap()
     {
+        //Hotkey 3 erstellt die deathtrap
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Instantiate(deathTrap, playerTransform.position, Quaternion.identity);
