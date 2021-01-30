@@ -1687,10 +1687,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018561313824359110, guid: 112e206886387224c9e5c25806290a3d, type: 3}
       propertyPath: m_Name
-      value: Victim (1)
+      value: Panic Person
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112e206886387224c9e5c25806290a3d, type: 3}
+--- !u!1 &1203641448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8946598768895619793, guid: 112e206886387224c9e5c25806290a3d, type: 3}
+  m_PrefabInstance: {fileID: 1203641447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1203641449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203641448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dee3571afff4012a797773f5314654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executionTime: 10
 --- !u!4 &1348689256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2018561313824359109, guid: 112e206886387224c9e5c25806290a3d, type: 3}
