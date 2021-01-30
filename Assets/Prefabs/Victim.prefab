@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 6751852110188725341}
   m_Layer: 0
   m_Name: Victim
-  m_TagString: Untagged
+  m_TagString: Victim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,3 +210,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d651db162f644d4b3e17d6966c00170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  executionTime: 1
