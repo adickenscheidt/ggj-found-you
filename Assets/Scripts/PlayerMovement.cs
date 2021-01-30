@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     private int xAxis;
     private int zAxis;
 
+
     /// <summary>
     /// Self explanatory!
     /// </summary>
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
         } else if (moveDirection.magnitude > 1) {
             moveDirection.Normalize();
         }
-        transform.Translate(moveDirection, Space.World);
+        transform.Translate(moveDirection * moveSpeed, Space.World);
     }
 
     /// <summary>

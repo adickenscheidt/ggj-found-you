@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8565968904634224752}
   - component: {fileID: 1789002250520793859}
   - component: {fileID: 1515933542397176880}
+  - component: {fileID: 7957271433226061026}
   m_Layer: 0
   m_Name: ItemTree
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 336375340614626417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -38.2, y: 8.1742, z: 0}
-  m_LocalScale: {x: 9.208844, y: 9.208844, z: 9.208844}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,3 +96,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339e0f7f7e2c2054a9204f14638382f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &7957271433226061026
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336375340614626417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 7
+  m_Direction: 1
+  m_Center: {x: 0, y: 3, z: 0}
