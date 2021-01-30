@@ -40,7 +40,7 @@ public class PlayerInteract : MonoBehaviour
 
     private bool FindClosestInteractable(out Interactable interactable)
     {
-        var colliders = new Collider[5];
+        var colliders = new Collider[10];
         Physics.OverlapSphereNonAlloc(transform.position, interactRange, colliders);
         var closestDistance = float.MaxValue;
         Interactable closestInteractable = null;
