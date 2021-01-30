@@ -4,7 +4,6 @@ public class RunToHideAI : BaseAIComponent
 {
     public override string AiName => "RunToHide";
     public float hideObjectSightRange = 10f;
-    public float runToHideMovementSpeed = 15f;
 
     private HideObject _targetHideObject;
 
@@ -53,7 +52,7 @@ public class RunToHideAI : BaseAIComponent
     {
         var transformPosition = _targetHideObject.transform.position - GetParentTransform().position;
         transformPosition.y = 0;
-        GetParentTransform().Translate(transformPosition.normalized * (Time.fixedDeltaTime * runToHideMovementSpeed),
+        GetParentTransform().Translate(transformPosition.normalized * (Time.fixedDeltaTime * victim.movementSpeed),
             Space.World);
     }
 

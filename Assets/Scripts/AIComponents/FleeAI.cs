@@ -4,7 +4,6 @@ public class FleeAI : BaseAIComponent
 {
     public override string AiName => "Fleeing";
     public float fleeStartRange = 10f;
-    public float fleeMovementSpeed = 15f;
 
     public override int GetAiValue(string currentAiName)
     {
@@ -21,6 +20,6 @@ public class FleeAI : BaseAIComponent
         var transformPosition = GetParentTransform().position - player.transform.position;
         transformPosition.y = 0;
         var awayFromPlayer = transformPosition.normalized;
-        GetParentTransform().Translate(awayFromPlayer * (Time.fixedDeltaTime * fleeMovementSpeed), Space.World);
+        GetParentTransform().Translate(awayFromPlayer * (Time.fixedDeltaTime * victim.movementSpeed), Space.World);
     }
 }

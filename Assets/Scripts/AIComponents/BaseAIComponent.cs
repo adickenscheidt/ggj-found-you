@@ -2,9 +2,12 @@
 
 public abstract class BaseAIComponent : MonoBehaviour
 {
-    internal GameObject player;
     public abstract string AiName { get; }
     public float executionTime = 1f;
+
+    private bool _isActive;
+    protected GameObject player;
+    protected Victim victim;
 
     public abstract int GetAiValue(string currentAiName);
 
@@ -12,8 +15,6 @@ public abstract class BaseAIComponent : MonoBehaviour
     {
         return executionTime;
     }
-
-    private bool _isActive;
 
     public virtual void StartAi()
     {
@@ -28,15 +29,18 @@ public abstract class BaseAIComponent : MonoBehaviour
     public virtual void Start()
     {
         player = GameObject.Find("PlayerObject");
+        victim = GetComponentInParent<Victim>();
     }
 
     public void Update()
     {
-        if(_isActive)
+        if (_isActive)
             AIUpdate();
     }
 
-    public virtual void AIUpdate() { }
+    public virtual void AIUpdate()
+    {
+    }
 
     internal bool IsPlayerInRange(float range)
     {
