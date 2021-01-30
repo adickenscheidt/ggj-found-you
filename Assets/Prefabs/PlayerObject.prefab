@@ -284,3 +284,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0241a10d0e46392468ee51124cd8b3bb, type: 3}
   - {fileID: 8300000, guid: d0cf2f947f5b7db4cab35cba5d650dde, type: 3}
   - {fileID: 8300000, guid: 6cad572f8f09f5344be975dbe3d82d90, type: 3}
+  footstepFiles: []

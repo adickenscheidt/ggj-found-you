@@ -43,13 +43,13 @@ public class PlayerMovement : MonoBehaviour {
     /// Moves the Player according to the Input of the User.
     /// </summary>
     private void MovePlayer() {
-        Vector3 moveDirection = new Vector3(xAxis, 0, zAxis) * moveSpeed * Time.deltaTime;
+        Vector3 moveDirection = new Vector3(xAxis, 0, zAxis);
         if (moveDirection.magnitude == 0) {
             return;
         } else if (moveDirection.magnitude > 1) {
             moveDirection.Normalize();
         }
-        transform.Translate(moveDirection * moveSpeed, Space.World);
+        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
     }
 
     /// <summary>
