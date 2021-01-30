@@ -1,50 +1,97 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
+
+public enum AIState
+{
+    Inactive,
+    Running,
+    Finished
+}
+
+public enum FinishMode
+{
+    PointReached,
+    TimePassed,
+    Manual
+}
 
 public abstract class BaseAIComponent : MonoBehaviour
 {
-    internal GameObject player;
     public abstract string AiName { get; }
-    public float executionTime = 1f;
+    public abstract FinishMode FinishMode { get; }
+    public virtual float FinishTime => 1f;
+
+    public AIState currentState = AIState.Inactive;
+    protected GameObject player;
+    protected Victim victim;
+    protected NavMeshAgent navMeshAgent;
+    protected float finishTime;
 
     public abstract int GetAiValue(string currentAiName);
 
-    public virtual float GetExecutionTime()
-    {
-        return executionTime;
-    }
-
-    private bool _isActive;
-
     public virtual void StartAi()
     {
-        _isActive = true;
+        currentState = AIState.Running;
+        finishTime = Time.time + FinishTime;
     }
 
     public virtual void StopAi()
     {
-        _isActive = false;
+        currentState = AIState.Inactive;
+    }
+
+    public virtual void Finish()
+    {
+        currentState = AIState.Finished;
     }
 
     public virtual void Start()
     {
         player = GameObject.Find("PlayerObject");
+        victim = GetComponentInParent<Victim>();
+        navMeshAgent = GetComponentInParent<NavMeshAgent>();
     }
 
     public void Update()
     {
-        if(_isActive)
-            AIUpdate();
+        if (currentState != AIState.Running)
+            return;
+        AIUpdate();
+        if (FinishMode == FinishMode.PointReached && HasReachedWalkDestination())
+            Finish();
+        else if (FinishMode == FinishMode.TimePassed && TimePassedToFinish())
+            Finish();
     }
 
-    public virtual void AIUpdate() { }
-
-    internal bool IsPlayerInRange(float range)
+    private bool TimePassedToFinish()
     {
+        return Time.time > finishTime;
+    }
+
+    public virtual void AIUpdate()
+    {
+    }
+
+    protected bool IsPlayerInRange(float range)
+    {
+        if (player == null)
+            return false;
         return (player.transform.position - transform.position).magnitude < range;
     }
 
-    internal Transform GetParentTransform()
+    protected Transform GetParentTransform()
     {
         return transform.parent;
+    }
+
+    protected bool WalkToPoint(Vector3 target)
+    {
+        return navMeshAgent.SetDestination(target);
+    }
+
+    protected bool HasReachedWalkDestination()
+    {
+        return !navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance &&
+               (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f);
     }
 }
