@@ -8,10 +8,6 @@ public class VictimAnimationMovement : MonoBehaviour {
     [SerializeField] private Animator victimAnimator;
     [SerializeField] private SpriteRenderer victimSpriteRenderer;
 
-    void Start() {
-
-    }
-
     void Update() {
         CheckIfMoving();
         SetAnimatorStates();
