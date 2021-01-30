@@ -1,12 +1,150 @@
 fileFormatVersion: 2
 guid: 1230ba1a4d0c59043b19a831171e07f8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7359619905970595662
+    second: Teen_Dave_Idle_Down_0
+  - first:
+      213: 7216006998786413546
+    second: Teen_Dave_Idle_Down_1
+  - first:
+      213: 919639295677480693
+    second: Teen_Dave_Idle_Down_2
+  - first:
+      213: -5074443585822477470
+    second: Teen_Dave_Idle_Down_3
+  - first:
+      213: -6781468991367746074
+    second: Teen_Dave_Idle_Down_4
+  - first:
+      213: -3702695324880822788
+    second: Teen_Dave_Idle_Down_5
+  - first:
+      213: -521486038356194113
+    second: Teen_Dave_Idle_Down_6
+  - first:
+      213: 5084055785629862998
+    second: Teen_Dave_Idle_Down_7
+  - first:
+      213: -1713896581526466641
+    second: Teen_Dave_Idle_Down_8
+  - first:
+      213: -3867398579613965140
+    second: Teen_Dave_Idle_Down_9
+  - first:
+      213: 8653903859881462838
+    second: Teen_Dave_Idle_Down_10
+  - first:
+      213: -8036606187520733707
+    second: Teen_Dave_Idle_Down_11
+  - first:
+      213: 5550133504790598904
+    second: Teen_Dave_Idle_Down_12
+  - first:
+      213: 6305670621539469538
+    second: Teen_Dave_Idle_Down_13
+  - first:
+      213: 1729617637740302969
+    second: Teen_Dave_Idle_Down_14
+  - first:
+      213: -1747226593681443307
+    second: Teen_Dave_Idle_Down_15
+  - first:
+      213: -8638819190482601776
+    second: Teen_Dave_Idle_Down_16
+  - first:
+      213: -813660289905697788
+    second: Teen_Dave_Idle_Down_17
+  - first:
+      213: 595261057947135936
+    second: Teen_Dave_Idle_Down_18
+  - first:
+      213: 3131779826824252778
+    second: Teen_Dave_Idle_Down_19
+  - first:
+      213: -1492363723056084945
+    second: Teen_Dave_Idle_Down_20
+  - first:
+      213: 7542175177626384419
+    second: Teen_Dave_Idle_Down_21
+  - first:
+      213: 1668063104372580349
+    second: Teen_Dave_Idle_Down_22
+  - first:
+      213: -2642042921322898609
+    second: Teen_Dave_Idle_Down_23
+  - first:
+      213: 4502759079136275591
+    second: Teen_Dave_Idle_Down_24
+  - first:
+      213: -6952501319039788643
+    second: Teen_Dave_Idle_Down_25
+  - first:
+      213: 8979961570001366146
+    second: Teen_Dave_Idle_Down_26
+  - first:
+      213: 6162652509690340488
+    second: Teen_Dave_Idle_Down_27
+  - first:
+      213: -8235295779540972180
+    second: Teen_Dave_Idle_Down_28
+  - first:
+      213: -7785174566518233639
+    second: Teen_Dave_Idle_Down_29
+  - first:
+      213: 4936725027624966964
+    second: Teen_Dave_Idle_Down_30
+  - first:
+      213: -8017382515226023616
+    second: Teen_Dave_Idle_Down_31
+  - first:
+      213: 7987616056938546245
+    second: Teen_Dave_Idle_Down_32
+  - first:
+      213: 1741078801799063162
+    second: Teen_Dave_Idle_Down_33
+  - first:
+      213: 452794202997024087
+    second: Teen_Dave_Idle_Down_34
+  - first:
+      213: -2593343425071288550
+    second: Teen_Dave_Idle_Down_35
+  - first:
+      213: -3073539316938472065
+    second: Teen_Dave_Idle_Down_36
+  - first:
+      213: 5123560225099150062
+    second: Teen_Dave_Idle_Down_37
+  - first:
+      213: 1413764843491567348
+    second: Teen_Dave_Idle_Down_38
+  - first:
+      213: -9113314222294996671
+    second: Teen_Dave_Idle_Down_39
+  - first:
+      213: 7994254564435129256
+    second: Teen_Dave_Idle_Down_40
+  - first:
+      213: -2932713682373046670
+    second: Teen_Dave_Idle_Down_41
+  - first:
+      213: -5940912520400805735
+    second: Teen_Dave_Idle_Down_42
+  - first:
+      213: 2026215226640703946
+    second: Teen_Dave_Idle_Down_43
+  - first:
+      213: -6962301284356860805
+    second: Teen_Dave_Idle_Down_44
+  - first:
+      213: 9203766166901147115
+    second: Teen_Dave_Idle_Down_45
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,27 +170,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -68,7 +206,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +218,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +254,19 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,11 +275,1161 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e476541cf4f922660800000000000000
+      internalID: 7359619905970595662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae395632228642460800000000000000
+      internalID: 7216006998786413546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feb854211733cc00800000000000000
+      internalID: 919639295677480693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263ba4ab174f399b0800000000000000
+      internalID: -5074443585822477470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ede232d1e163e1a0800000000000000
+      internalID: -6781468991367746074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd9af048326d9cc0800000000000000
+      internalID: -3702695324880822788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc0478063f43c8f0800000000000000
+      internalID: -521486038356194113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cccb0fcc13e8640800000000000000
+      internalID: 5084055785629862998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafcb54c3240738e0800000000000000
+      internalID: -1713896581526466641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca462417b7d345ac0800000000000000
+      internalID: -3867398579613965140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ccd90d5b7d81870800000000000000
+      internalID: 8653903859881462838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdce11904d387090800000000000000
+      internalID: -8036606187520733707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f499094409060d40800000000000000
+      internalID: 5550133504790598904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e80a7b750e328750800000000000000
+      internalID: 6305670621539469538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972d2ced316d00810800000000000000
+      internalID: 1729617637740302969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51670859baa90c7e0800000000000000
+      internalID: -1747226593681443307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8f47877bfbc1880800000000000000
+      internalID: -8638819190482601776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c545cf64c45b4f0800000000000000
+      internalID: -813660289905697788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfef8347cac24800800000000000000
+      internalID: 595261057947135936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d089cd821567b20800000000000000
+      internalID: 3131779826824252778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28009bc91f0a4be0800000000000000
+      internalID: -1492363723056084945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32870382d503ba860800000000000000
+      internalID: 7542175177626384419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff101f3e86262710800000000000000
+      internalID: 1668063104372580349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b963116f3955bd0800000000000000
+      internalID: -2642042921322898609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c251d96830d7e30800000000000000
+      internalID: 4502759079136275591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99d232e2e0c38f90800000000000000
+      internalID: -6952501319039788643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c2794587b3f9c70800000000000000
+      internalID: 8979961570001366146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88423427ec3268550800000000000000
+      internalID: 6162652509690340488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dcf28fe1a56bd80800000000000000
+      internalID: -8235295779540972180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d56648baf085f390800000000000000
+      internalID: -7785174566518233639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bdd59b145c28440800000000000000
+      internalID: 4936725027624966964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049668f84198cb090800000000000000
+      internalID: -8017382515226023616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544470ccb76b9de60800000000000000
+      internalID: 7987616056938546245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76223312fd892810800000000000000
+      internalID: 1741078801799063162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_34
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7556ef9bde5a84600800000000000000
+      internalID: 452794202997024087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_35
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fe70025e7920cd0800000000000000
+      internalID: -2593343425071288550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_36
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f758faa86489855d0800000000000000
+      internalID: -3073539316938472065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_37
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2fa5201ea8a1740800000000000000
+      internalID: 5123560225099150062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_38
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6204c72a3be9310800000000000000
+      internalID: 1413764843491567348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_39
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149679dcff0078180800000000000000
+      internalID: -9113314222294996671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_40
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a37335cb2c41fe60800000000000000
+      internalID: 7994254564435129256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_41
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e0a3ea178ec47d0800000000000000
+      internalID: -2932713682373046670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_42
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990e6dbf983ad8da0800000000000000
+      internalID: -5940912520400805735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_43
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1286663009e1c10800000000000000
+      internalID: 2026215226640703946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_44
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74d9a6aedfe06f90800000000000000
+      internalID: -6962301284356860805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Idle_Down_45
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5c6eda0985abf70800000000000000
+      internalID: 9203766166901147115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ef901cefd8198794f904a350e1cc2ab1
     internalID: 0
     vertices: []
     indices: 

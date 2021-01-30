@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c367889dc62b464ab5e5ea7ccdad1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footstepsSoundFiles:
+  soundFiles:
   - {fileID: 8300000, guid: 263a28d8cc0923c4d8bc5f086e378dea, type: 3}
   - {fileID: 8300000, guid: 0241a10d0e46392468ee51124cd8b3bb, type: 3}
   - {fileID: 8300000, guid: d0cf2f947f5b7db4cab35cba5d650dde, type: 3}
