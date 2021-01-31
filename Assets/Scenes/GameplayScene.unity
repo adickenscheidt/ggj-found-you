@@ -21261,6 +21261,10 @@ PrefabInstance:
       propertyPath: hideObjectSightRange
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3068430900353711110, guid: fe7713ae309ad3548ad14093afdffc8a, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3805378200346447434, guid: fe7713ae309ad3548ad14093afdffc8a, type: 3}
       propertyPath: m_Speed
       value: 20
@@ -28826,6 +28830,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1152370957, guid: 5e4dd3ad98a1d58489ca97aafde33317, type: 3}
+      propertyPath: lowpassLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.1814461
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324755599089232685, guid: 5e4dd3ad98a1d58489ca97aafde33317, type: 3}
+      propertyPath: m_Volume
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 6104147850980070496, guid: 5e4dd3ad98a1d58489ca97aafde33317, type: 3}
       propertyPath: m_Name
       value: PlayerObject
@@ -48259,6 +48271,10 @@ PrefabInstance:
     - target: {fileID: 7538373677868125103, guid: e036a5a5c2a921347bcf0928175f0808, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7538373678129909299, guid: e036a5a5c2a921347bcf0928175f0808, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7538373678576429999, guid: e036a5a5c2a921347bcf0928175f0808, type: 3}
       propertyPath: m_Name
