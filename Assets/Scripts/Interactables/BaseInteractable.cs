@@ -14,10 +14,7 @@ public abstract class BaseInteractable : MonoBehaviour
     {
         SpriteRenderer = GetComponent<SpriteRenderer>();
         if (SpriteRenderer == null)
-            Debug.LogError($"No SpriteRenderer found on {this.name}!");
-        Victim = GetComponent<Victim>();
-        if (Victim == null)
-            Debug.LogError($"No Victim component found on {this.name}!");
+            SpriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

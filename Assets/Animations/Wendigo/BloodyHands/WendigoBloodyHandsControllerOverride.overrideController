@@ -8,4 +8,12 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: WendigoBloodyHandsControllerOverride
   m_Controller: {fileID: 9100000, guid: ce02728ede2ed0f49bb06ac8c13cdeb4, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 98297b20ef5580e44a1e3b3a72a68a05, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e79c147f6c5bbd744aa433fe65ea8e48, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f5346ce486f35f847a79a970c788ac74, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 70f967ec3d6d8314cb50ef34a657b8a5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 11bb95eb047d92b47a9d259f5e9d2bd7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 538a8a6079e0cfd4cb75d58294edbc2b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ef8e8246e27f67c41b7f604870c55887, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: feec19d010be2454eb61137ecb6a7241, type: 2}

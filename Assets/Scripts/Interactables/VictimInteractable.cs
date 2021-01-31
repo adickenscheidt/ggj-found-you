@@ -9,6 +9,7 @@
     {
         base.Start();
         _victimDeath = GetComponent<VictimDeath>();
+        Victim = GetComponent<Victim>();
     }
 
     public override void Interact()
