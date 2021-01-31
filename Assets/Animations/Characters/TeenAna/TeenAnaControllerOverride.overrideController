@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TeenAnaControllerOverride
+  m_Controller: {fileID: 9100000, guid: 23ee82524d7cc434d92ad1e784526b01, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0e70ce4d22570214291550d0113ebca5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6cce0e503e161344b9220808b06ffd05, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9a56c315db87f0647b0aa7e60824ca47, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 19a68c2c56715764f810bd23761f4ef3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d730f896681c8bd4b9e3158b4029ba00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f099da91021f08f4f8bfbe7928a52b6f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8911718d6c48e804ab01f486da264f91, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4ef3e82071068ee4c96dc02e4a33eb4b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8aeceaaea24ea2f408be5c77a701bb5a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 717bfe2dcead87743afb10e09a2209fa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6e4703ca8de382f4baa18f0ce9345e06, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9b566ff78e682d444a98d5b278dad7bd, type: 2}
