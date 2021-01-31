@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TutorialUI : MonoBehaviour
 {
-    //UI canvas
+    //UI panel
+    [FormerlySerializedAs("tutorialUi")] [SerializeField]
+    GameObject tutorialPanel;
+    
+    //Gameplay panel
     [SerializeField]
-    GameObject tutorialUi;
+    GameObject gameplayPanel;
 
     //Player Object
     [SerializeField]
@@ -22,7 +27,7 @@ public class TutorialUI : MonoBehaviour
     private void Awake()
     {
         //sets the Ui visible
-        tutorialUi.gameObject.SetActive(true);
+        tutorialPanel.gameObject.SetActive(true);
         //makes sure the cursor is visible
         Cursor.visible = true;
         //sets time to 0
@@ -46,7 +51,9 @@ public class TutorialUI : MonoBehaviour
     public void HideTutorialCanvas()
     {
         //deactivates the UI/Canvas
-        tutorialUi.gameObject.SetActive(false);
+        tutorialPanel.gameObject.SetActive(false);
+        //activates Gameplay panel
+        gameplayPanel.gameObject.SetActive(true);
         //makes the cursor invisible
         Cursor.visible = false;
         //the game time runs normally
