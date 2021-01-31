@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4769005790170687901}
   - component: {fileID: -6721216545280363223}
   - component: {fileID: 8056201157886124081}
+  - component: {fileID: -4749901959311666679}
   m_Layer: 0
   m_Name: ItemBox
   m_TagString: Untagged
@@ -95,3 +96,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339e0f7f7e2c2054a9204f14638382f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-4749901959311666679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925307247541294835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.49, y: 5.56, z: 0.6}
+  m_Center: {x: 0, y: 2.78, z: 1.6}
