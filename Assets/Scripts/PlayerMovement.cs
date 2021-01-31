@@ -7,6 +7,10 @@ public class PlayerMovement : MonoBehaviour {
     private int xAxis;
     private int zAxis;
 
+    [SerializeField]
+    float speed;
+    Rigidbody rb;
+
 
     /// <summary>
     /// Self explanatory!
@@ -20,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     private void Initialize() {
         playerAnimator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     /// <summary>
@@ -43,6 +48,7 @@ public class PlayerMovement : MonoBehaviour {
     /// Moves the Player according to the Input of the User.
     /// </summary>
     private void MovePlayer() {
+        /*
         Vector3 moveDirection = new Vector3(xAxis, 0, zAxis);
         if (moveDirection.magnitude == 0) {
             return;
@@ -50,6 +56,13 @@ public class PlayerMovement : MonoBehaviour {
             moveDirection.Normalize();
         }
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
+        */
+        Vector2 xMov = new Vector2(Input.GetAxisRaw("Horizontal") * transform.right.x, Input.GetAxisRaw("Horizontal") * transform.right.z);
+        Vector2 zMov = new Vector2(Input.GetAxisRaw("Vertical") * transform.forward.x, Input.GetAxisRaw("Vertical") * transform.forward.z);
+
+        Vector2 velocity = (xMov + zMov).normalized * speed * Time.deltaTime;
+
+        rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.y);
     }
 
     /// <summary>
