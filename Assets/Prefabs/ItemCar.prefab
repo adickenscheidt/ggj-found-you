@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8495935650469807778}
   - component: {fileID: -4576599458509945797}
+  - component: {fileID: 3416226993294705584}
   m_Layer: 0
   m_Name: ItemCar
   m_TagString: Untagged
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3416226993294705584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575930959541947167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339e0f7f7e2c2054a9204f14638382f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
