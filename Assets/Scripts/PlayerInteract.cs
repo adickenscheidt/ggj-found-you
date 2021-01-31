@@ -41,13 +41,13 @@ public class PlayerInteract : MonoBehaviour
     private bool FindClosestInteractable(out BaseInteractable baseInteractable)
     {
         var colliders = new Collider[10];
-        Physics.OverlapSphereNonAlloc(transform.position, interactRange, colliders);
+        var count = Physics.OverlapSphereNonAlloc(transform.position, interactRange, colliders);
         var closestDistance = float.MaxValue;
         BaseInteractable closestBaseInteractable = null;
         foreach (var foundCollider in colliders)
         {
             var foundInteractable = foundCollider?.GetComponent<BaseInteractable>();
-            if (foundInteractable == null)
+            if (foundInteractable == null || !foundInteractable.IsActive)
                 continue;
             var distanceToInteractable = (foundInteractable.transform.position - transform.position).magnitude;
             if (distanceToInteractable > closestDistance)

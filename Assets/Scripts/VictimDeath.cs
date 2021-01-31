@@ -7,12 +7,10 @@ public class VictimDeath : MonoBehaviour
     //Can be called from anywhere, destroys the player sprite and instantiates blood splatter on that spot (+sound)
 
     //Bloodsplatter graphic
-    [SerializeField]
-    GameObject bloodSplatter;
+    [SerializeField] Sprite bloodSplatter;
 
     //Sound
-    [SerializeField]
-    private AudioClip[] deathSoundsVictim;
+    [SerializeField] private AudioClip[] deathSoundsVictim;
     private AudioSource audioSource;
 
     private void Awake()
@@ -24,10 +22,14 @@ public class VictimDeath : MonoBehaviour
     public void VictimDies()
     {
         //Instantiates the bloodsplatter prefab
-        Instantiate(bloodSplatter, this.transform.position, Quaternion.identity);
+        // Instantiate(bloodSplatter, this.transform.position, Quaternion.identity);
+        var child = transform.GetChild(0);
+        child.GetComponent<Animator>().enabled = false;
+        child.GetComponent<SpriteRenderer>().sprite = bloodSplatter;
         //Play Death sound
-        audioSource.PlayOneShot(deathSoundsVictim[Random.Range(0, deathSoundsVictim.Length)]);
-        //Disables Victim
-        this.gameObject.SetActive(false);
+        if (deathSoundsVictim.Length > 0)
+            audioSource.PlayOneShot(deathSoundsVictim[Random.Range(0, deathSoundsVictim.Length)]);
+        //Disables Victim AI
+        GetComponentInChildren<AIController>()?.gameObject.SetActive(false);
     }
 }

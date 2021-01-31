@@ -3,11 +3,11 @@ using UnityEngine;
 
 public abstract class BaseInteractable : MonoBehaviour
 {
-    private bool _isInteractable;
+    private bool _isHighlighted;
     private Color _normalColor;
     private readonly Color _interactColor = new Color(0.7f, 0, 0);
     protected SpriteRenderer SpriteRenderer;
-    protected Victim Victim;
+    public bool IsActive { get; set; } = true;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -26,17 +26,22 @@ public abstract class BaseInteractable : MonoBehaviour
     {
         if (SpriteRenderer == null)
             return;
-        if (_isInteractable == highlight)
+        if (_isHighlighted == highlight)
             return;
 
-        _isInteractable = highlight;
-        if (_isInteractable)
+        _isHighlighted = highlight;
+        if (_isHighlighted)
         {
             _normalColor = SpriteRenderer.color;
             SpriteRenderer.color = _interactColor;
         }
         else
             SpriteRenderer.color = _normalColor;
+    }
+
+    protected void ResetColor()
+    {
+        SpriteRenderer.color = _normalColor;
     }
 
     public abstract void Interact();

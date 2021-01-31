@@ -1,9 +1,11 @@
 ﻿public class VictimInteractable : BaseInteractable
 {
     public delegate void OnVictimKilled();
+
     public static event OnVictimKilled VictimKilled;
 
     private VictimDeath _victimDeath;
+    protected Victim Victim;
 
     public override void Start()
     {
@@ -19,7 +21,10 @@
 
     private void Kill()
     {
-        _victimDeath.VictimDies();
         VictimKilled?.Invoke();
+        _victimDeath.VictimDies();
+        Victim.alive = false;
+        ResetColor();
+        IsActive = false;
     }
 }
