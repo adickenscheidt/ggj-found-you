@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: d1d48ce01d5b9b04f972fb68e37dad6a
+guid: 85e051bbb13da7d4daf45c30c1d2a0a7
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 5142189713568575139
-    second: Teen_Ana_Running_Up_0
-  - first:
-      213: 7521327870726773791
-    second: Teen_Ana_Running_Up_1
-  - first:
-      213: -7153469046447331908
-    second: Teen_Ana_Running_Up_2
-  - first:
-      213: 2037370263048436559
-    second: Teen_Ana_Running_Up_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,16 +37,16 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,107 +137,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Teen_Ana_Running_Up_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -16, y: 20}
-        - {x: -16, y: -20}
-        - {x: 16, y: -20}
-        - {x: 16, y: 20}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ae2ceccc4abc5740800000000000000
-      internalID: 5142189713568575139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teen_Ana_Running_Up_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -16, y: 20}
-        - {x: -16, y: -20}
-        - {x: 16, y: -20}
-        - {x: 16, y: 20}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1c1ae549df116860800000000000000
-      internalID: 7521327870726773791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teen_Ana_Running_Up_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -16, y: 20}
-        - {x: -16, y: -20}
-        - {x: 16, y: -20}
-        - {x: 16, y: 20}
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb521ce8dc5c9bc90800000000000000
-      internalID: -7153469046447331908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teen_Ana_Running_Up_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -16, y: 20}
-        - {x: -16, y: -20}
-        - {x: 16, y: -20}
-        - {x: 16, y: 20}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4b32f4b571364c10800000000000000
-      internalID: 2037370263048436559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
