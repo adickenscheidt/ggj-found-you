@@ -67,7 +67,7 @@ public class RunToHideAI : BaseAIComponent
 
     private bool HideObjectInRange()
     {
-        var hideRange = 0.2f;
+        var hideRange = 0.7f;
         return (GetParentTransform().position - _targetHideObject.transform.position).magnitude < hideRange;
     }
 
