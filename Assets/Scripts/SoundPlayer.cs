@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundPlayer : MonoBehaviour {
-    [SerializeField] private AudioClip[] footstepsSoundFiles;
+    [SerializeField] private AudioClip[] soundFiles;
+    [SerializeField] private AudioClip[] footstepFiles;
     private AudioSource audioSrc;
 
     private void Start() {
@@ -13,7 +12,11 @@ public class SoundPlayer : MonoBehaviour {
     /// <summary>
     /// Gets called from AnimatorEvent
     /// </summary>
-    private void PlayFootstep() {
-        audioSrc.PlayOneShot(footstepsSoundFiles[Random.Range(0, footstepsSoundFiles.Length)]);
+    private void PlayRandomFromArray() {
+        audioSrc.PlayOneShot(soundFiles[Random.Range(0, soundFiles.Length)]);
+    }
+
+    private void PlayRandomFootstep() {
+        audioSrc.PlayOneShot(footstepFiles[Random.Range(0, footstepFiles.Length)]);
     }
 }

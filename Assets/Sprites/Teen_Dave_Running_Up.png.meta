@@ -1,12 +1,36 @@
 fileFormatVersion: 2
 guid: 0b5b945dcf4d6dd43afa976e19f2a408
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2292416538728310926
+    second: Teen_Dave_Running_Up_0
+  - first:
+      213: -4678288365178469044
+    second: Teen_Dave_Running_Up_1
+  - first:
+      213: 2146298868874778699
+    second: Teen_Dave_Running_Up_2
+  - first:
+      213: -2243549000311363998
+    second: Teen_Dave_Running_Up_3
+  - first:
+      213: -7125516436370185792
+    second: Teen_Dave_Running_Up_4
+  - first:
+      213: 8227548145234783266
+    second: Teen_Dave_Running_Up_5
+  - first:
+      213: -4377642617691737423
+    second: Teen_Dave_Running_Up_6
+  - first:
+      213: -765177253308969341
+    second: Teen_Dave_Running_Up_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,27 +56,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -68,7 +92,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +104,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +140,19 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,11 +161,211 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88a12c32bc40df10800000000000000
+      internalID: 2292416538728310926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45c1bcb481631fb0800000000000000
+      internalID: -4678288365178469044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b489a1d137f29cd10800000000000000
+      internalID: 2146298868874778699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266224032105dd0e0800000000000000
+      internalID: -2243549000311363998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1a2f0cd841d1d90800000000000000
+      internalID: -7125516436370185792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ca429527f1e2270800000000000000
+      internalID: 8227548145234783266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b27fd2ab3d7f33c0800000000000000
+      internalID: -4377642617691737423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teen_Dave_Running_Up_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -20}
+        - {x: 16, y: 20}
+        - {x: -16, y: 20}
+        - {x: -16, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e4f4a975b8165f0800000000000000
+      internalID: -765177253308969341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c821372eab8d09647ab9d915bf3ea038
     internalID: 0
     vertices: []
     indices: 

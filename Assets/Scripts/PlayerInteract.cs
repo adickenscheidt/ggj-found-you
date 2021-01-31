@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public float interactRange = 2f;
-    private Interactable _currentInteractable;
+    private BaseInteractable _currentBaseInteractable;
 
     void Start()
     {
@@ -13,50 +13,50 @@ public class PlayerInteract : MonoBehaviour
     {
         if (FindClosestInteractable(out var foundInteractable))
         {
-            if(foundInteractable != _currentInteractable)
+            if(foundInteractable != _currentBaseInteractable)
                 SwitchToNewInteractable(foundInteractable);
         }
         else
         {
-            if(_currentInteractable != null)
+            if(_currentBaseInteractable != null)
                 SwitchToNewInteractable(null);
                 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && _currentInteractable != null)
+        if (Input.GetKeyDown(KeyCode.Space) && _currentBaseInteractable != null)
         {
-            _currentInteractable.Interact();
+            _currentBaseInteractable.Interact();
         }
     }
 
-    private void SwitchToNewInteractable(Interactable foundInteractable)
+    private void SwitchToNewInteractable(BaseInteractable foundBaseInteractable)
     {
-        if (_currentInteractable != null)
-            _currentInteractable.HightlightAsInteractable(false);
-        _currentInteractable = foundInteractable;
-        if (_currentInteractable != null)
-            _currentInteractable.HightlightAsInteractable(true);
+        if (_currentBaseInteractable != null)
+            _currentBaseInteractable.HightlightAsInteractable(false);
+        _currentBaseInteractable = foundBaseInteractable;
+        if (_currentBaseInteractable != null)
+            _currentBaseInteractable.HightlightAsInteractable(true);
     }
 
-    private bool FindClosestInteractable(out Interactable interactable)
+    private bool FindClosestInteractable(out BaseInteractable baseInteractable)
     {
         var colliders = new Collider[10];
         Physics.OverlapSphereNonAlloc(transform.position, interactRange, colliders);
         var closestDistance = float.MaxValue;
-        Interactable closestInteractable = null;
+        BaseInteractable closestBaseInteractable = null;
         foreach (var foundCollider in colliders)
         {
-            var foundInteractable = foundCollider?.GetComponent<Interactable>();
+            var foundInteractable = foundCollider?.GetComponent<BaseInteractable>();
             if (foundInteractable == null)
                 continue;
             var distanceToInteractable = (foundInteractable.transform.position - transform.position).magnitude;
             if (distanceToInteractable > closestDistance)
                 continue;
             closestDistance = distanceToInteractable;
-            closestInteractable = foundInteractable;
+            closestBaseInteractable = foundInteractable;
         }
 
-        interactable = closestInteractable;
-        return interactable != null;
+        baseInteractable = closestBaseInteractable;
+        return baseInteractable != null;
     }
 }
