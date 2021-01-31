@@ -16,10 +16,10 @@ GameObject:
   - component: {fileID: 172710335446839840}
   - component: {fileID: 4609892542631883394}
   - component: {fileID: 2081184230600924281}
+  - component: {fileID: 925966567}
   - component: {fileID: 925966576}
   - component: {fileID: 925966577}
   - component: {fileID: 925966571}
-  - component: {fileID: 925966567}
   - component: {fileID: 925966575}
   m_Layer: 0
   m_Name: PlayerObject
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4250c15c2632515408272fad040bd5df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRange: 0.5
+  interactRange: 5
 --- !u!114 &2081184230600924281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +270,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d0cf2f947f5b7db4cab35cba5d650dde, type: 3}
   - {fileID: 8300000, guid: 6cad572f8f09f5344be975dbe3d82d90, type: 3}
   footstepFiles: []
+--- !u!114 &925966567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104147850980070496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f89870a0284a24a998ed9f05c2ab69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 925966571}
+  playerOverrideController: {fileID: 22100000, guid: 99f48f44438dab14da57d0aece1f98fd, type: 2}
 --- !u!54 &925966576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -299,7 +313,7 @@ CapsuleCollider:
   m_Radius: 2
   m_Height: 8
   m_Direction: 1
-  m_Center: {x: 0, y: 4, z: 0}
+  m_Center: {x: 0, y: 2.5, z: -1.5}
 --- !u!95 &925966571
 Animator:
   serializedVersion: 3
@@ -310,7 +324,7 @@ Animator:
   m_GameObject: {fileID: 6104147850980070496}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 99f48f44438dab14da57d0aece1f98fd, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce02728ede2ed0f49bb06ac8c13cdeb4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -319,20 +333,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &925966567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104147850980070496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f89870a0284a24a998ed9f05c2ab69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAnimator: {fileID: 925966571}
-  playerOverrideController: {fileID: 22100000, guid: 99f48f44438dab14da57d0aece1f98fd, type: 2}
 --- !u!114 &925966575
 MonoBehaviour:
   m_ObjectHideFlags: 0

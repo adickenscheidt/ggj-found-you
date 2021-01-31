@@ -13,7 +13,7 @@ public class PlayerSwitchController : MonoBehaviour {
     }
 
     private void SwitchController() {
-        playerAnimator.runtimeAnimatorController = (RuntimeAnimatorController)playerOverrideController;
+        playerAnimator.runtimeAnimatorController = playerOverrideController;
     }
 
     private void OnDisable() {
