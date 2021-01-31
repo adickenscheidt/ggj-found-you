@@ -1,19 +1,37 @@
 fileFormatVersion: 2
-guid: 3d838b061e2e1c44f9d47929cb8bd2ae
+guid: cf0416526b8b8764b830fee397a08e55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1213850469005515680
-    second: Wendigo_Walking_HasKilled_Up_0
+      213: 2460312703197542054
+    second: Wendigo_Idle_HasKilled_Up_0
   - first:
-      213: 7640420032494811987
-    second: Wendigo_Walking_HasKilled_Up_1
+      213: 5501710332337919356
+    second: Wendigo_Idle_HasKilled_Up_1
   - first:
-      213: 1912756518549284787
-    second: Wendigo_Walking_HasKilled_Up_2
+      213: -9215560635892664956
+    second: Wendigo_Idle_HasKilled_Up_2
   - first:
-      213: -8134087666331119948
-    second: Wendigo_Walking_HasKilled_Up_3
+      213: -8049489618190476746
+    second: Wendigo_Idle_HasKilled_Up_3
+  - first:
+      213: -2576545875892545099
+    second: Wendigo_Idle_HasKilled_Up_4
+  - first:
+      213: -8597904807363695911
+    second: Wendigo_Idle_HasKilled_Up_5
+  - first:
+      213: 3468144598759956290
+    second: Wendigo_Idle_HasKilled_Up_6
+  - first:
+      213: -6864989787990301389
+    second: Wendigo_Idle_HasKilled_Up_7
+  - first:
+      213: -7444508537320113973
+    second: Wendigo_Idle_HasKilled_Up_8
+  - first:
+      213: -6448002139630744595
+    second: Wendigo_Idle_HasKilled_Up_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +169,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wendigo_Walking_HasKilled_Up_0
+      name: Wendigo_Idle_HasKilled_Up_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,20 +181,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -16, y: 32}
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
         - {x: -16, y: -32}
         - {x: 16, y: -32}
-        - {x: 16, y: 32}
       tessellationDetail: 0
       bones: []
-      spriteID: 0abd38ff19678d010800000000000000
-      internalID: 1213850469005515680
+      spriteID: 6a678764e59c42220800000000000000
+      internalID: 2460312703197542054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wendigo_Walking_HasKilled_Up_1
+      name: Wendigo_Idle_HasKilled_Up_1
       rect:
         serializedVersion: 2
         x: 32
@@ -188,20 +206,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -16, y: 32}
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
         - {x: -16, y: -32}
         - {x: 16, y: -32}
-        - {x: 16, y: 32}
       tessellationDetail: 0
       bones: []
-      spriteID: 35bb1a3f989380a60800000000000000
-      internalID: 7640420032494811987
+      spriteID: c751910e5600a5c40800000000000000
+      internalID: 5501710332337919356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wendigo_Walking_HasKilled_Up_2
+      name: Wendigo_Idle_HasKilled_Up_2
       rect:
         serializedVersion: 2
         x: 64
@@ -213,20 +231,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -16, y: 32}
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
         - {x: -16, y: -32}
         - {x: 16, y: -32}
-        - {x: 16, y: 32}
       tessellationDetail: 0
       bones: []
-      spriteID: 3b761fd5be97b8a10800000000000000
-      internalID: 1912756518549284787
+      spriteID: 4857b838d60cb1080800000000000000
+      internalID: -9215560635892664956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wendigo_Walking_HasKilled_Up_3
+      name: Wendigo_Idle_HasKilled_Up_3
       rect:
         serializedVersion: 2
         x: 96
@@ -238,14 +256,164 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -16, y: 32}
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
         - {x: -16, y: -32}
         - {x: 16, y: -32}
-        - {x: 16, y: 32}
       tessellationDetail: 0
       bones: []
-      spriteID: 4be827c1d5aed1f80800000000000000
-      internalID: -8134087666331119948
+      spriteID: 63adf8c17d77a4090800000000000000
+      internalID: -8049489618190476746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wendigo_Idle_HasKilled_Up_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b95def4d254e3cd0800000000000000
+      internalID: -2576545875892545099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wendigo_Idle_HasKilled_Up_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daa670a12b1ea880800000000000000
+      internalID: -8597904807363695911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wendigo_Idle_HasKilled_Up_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fd6c63323512030800000000000000
+      internalID: 3468144598759956290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wendigo_Idle_HasKilled_Up_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335672cf828aab0a0800000000000000
+      internalID: -6864989787990301389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wendigo_Idle_HasKilled_Up_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8fba19deacfa890800000000000000
+      internalID: -7444508537320113973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wendigo_Idle_HasKilled_Up_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: debc95c87381486a0800000000000000
+      internalID: -6448002139630744595
       vertices: []
       indices: 
       edges: []
@@ -253,7 +421,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e89fe08de73d7db45bb69870ee9bb09c
+    spriteID: 9f7c70c63a59e9f4caa772b96966c438
     internalID: 0
     vertices: []
     indices: 
