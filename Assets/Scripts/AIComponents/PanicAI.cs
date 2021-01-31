@@ -19,10 +19,10 @@ public class PanicAI : BaseAIComponent
     {
         base.StartAi();
         _walkingPoints.Clear();
-        _walkingPoints.Add(GetParentTransform().position - (Vector3.left * 2));
-        _walkingPoints.Add(GetParentTransform().position - (Vector3.back * 2));
-        _walkingPoints.Add(GetParentTransform().position - (Vector3.right * 2));
-        _walkingPoints.Add(GetParentTransform().position - (Vector3.forward * 2));
+        _walkingPoints.Add(GetParentTransform().position - (Vector3.left * 3));
+        _walkingPoints.Add(GetParentTransform().position - (Vector3.back * 3));
+        _walkingPoints.Add(GetParentTransform().position - (Vector3.right * 3));
+        _walkingPoints.Add(GetParentTransform().position - (Vector3.forward * 3));
         _currentWalkingPoint = _walkingPoints[0];
         _currentWalkingPointIndex = 0;
     }
@@ -51,6 +51,6 @@ public class PanicAI : BaseAIComponent
 
     private bool ReachedCurrentWalkingPoint()
     {
-        return Vector3.Distance(_currentWalkingPoint, GetParentTransform().position) < 0.2f;
+        return Vector3.Distance(_currentWalkingPoint, GetParentTransform().position) < 0.4f;
     }
 }

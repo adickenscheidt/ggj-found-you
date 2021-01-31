@@ -26,8 +26,13 @@ public class LeaveFootsteps : MonoBehaviour
 
     private void LeaveNewFootstep()
     {
-        var footstep = Instantiate(FootstepPrefab, transform.position,
-            Quaternion.FromToRotation(_lastFootstepPosition, transform.position));
+        var direction = (transform.position - _lastFootstepPosition).normalized;
+        var rotation = Quaternion.LookRotation(direction);
+        var footstep = Instantiate(FootstepPrefab, transform.position, rotation * Quaternion.Euler(90, 0, 180));
+        // footstep.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        // footstep.transform.rotation = Quaternion.Euler(footstep.transform.rotation.x, 0, );
+
+
         Destroy(footstep.gameObject, 20f);
         _lastFootstepPosition = transform.position;
     }
