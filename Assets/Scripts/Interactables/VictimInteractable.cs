@@ -1,5 +1,8 @@
 ﻿public class VictimInteractable : BaseInteractable
 {
+    public delegate void OnVictimKilled();
+    public static event OnVictimKilled VictimKilled;
+
     private VictimDeath _victimDeath;
 
     public override void Start()
@@ -16,5 +19,6 @@
     private void Kill()
     {
         _victimDeath.VictimDies();
+        VictimKilled?.Invoke();
     }
 }
