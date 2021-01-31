@@ -7,6 +7,7 @@ public abstract class BaseInteractable : MonoBehaviour
     private Color _normalColor;
     private readonly Color _interactColor = new Color(0.7f, 0, 0);
     protected SpriteRenderer SpriteRenderer;
+    protected HideObject HideObject;
     public bool IsActive { get; set; } = true;
 
     // Start is called before the first frame update
@@ -14,7 +15,8 @@ public abstract class BaseInteractable : MonoBehaviour
     {
         SpriteRenderer = GetComponent<SpriteRenderer>();
         if (SpriteRenderer == null)
-            SpriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+            SpriteRenderer = transform.GetComponentInChildren<SpriteRenderer>();
+        HideObject = GetComponent<HideObject>();
     }
 
     // Update is called once per frame
@@ -44,5 +46,8 @@ public abstract class BaseInteractable : MonoBehaviour
         SpriteRenderer.color = _normalColor;
     }
 
-    public abstract void Interact();
+    public virtual void Interact()
+    {
+        HideObject.KickVictimsOut();
+    }
 }

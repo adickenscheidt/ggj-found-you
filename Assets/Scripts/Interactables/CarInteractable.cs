@@ -2,6 +2,7 @@
 {
     public override void Interact()
     {
+        base.Interact();
         // TODO: Alarmanlage an
     }
 }

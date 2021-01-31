@@ -10,7 +10,7 @@ public class RunToHideAI : BaseAIComponent
 
     public override int GetAiValue(string currentAiName)
     {
-        if (currentAiName != "Fleeing" && currentAiName != "RunToHide")
+        if (currentAiName != "Fleeing" && currentAiName != "RunToHide" || victim.nextHideTime > Time.time)
             return 0;
 
         return TryFindObjectToHide(hideObjectSightRange) ? 80 : 0;
@@ -31,19 +31,22 @@ public class RunToHideAI : BaseAIComponent
     public override void Finish()
     {
         base.Finish();
-        if(HideObjectInRange())
+        if (HideObjectInRange())
             HideInHideObject();
+        _targetHideObject = null;
     }
 
     private bool TryFindObjectToHide(float hideRange)
     {
         if (_targetHideObject != null)
             return true;
-        var hideObjects = new Collider[5];
+        var hideObjects = new Collider[15];
         var size = Physics.OverlapSphereNonAlloc(GetParentTransform().position, hideRange, hideObjects);
         foreach (var currHideObject in hideObjects)
         {
-            var hideObject = currHideObject?.GetComponent<HideObject>();
+            if (currHideObject == null)
+                continue;
+            var hideObject = TryGetHideObject(currHideObject.gameObject);
             if (hideObject != null)
             {
                 _targetHideObject = hideObject;
@@ -56,14 +59,27 @@ public class RunToHideAI : BaseAIComponent
 
     private void HideInHideObject()
     {
-        GetParentTransform().GetChild(0).gameObject.SetActive(false);
-        gameObject.SetActive(false);
-        _targetHideObject.HideIn(GetParentTransform().gameObject);
+        // GetParentTransform().GetChild(0).gameObject.SetActive(false);
+        // gameObject.SetActive(false);
+        // _targetHideObject.HideIn(GetParentTransform().gameObject);
+        _targetHideObject.HideIn(victim);
     }
 
     private bool HideObjectInRange()
     {
         var hideRange = 0.2f;
         return (GetParentTransform().position - _targetHideObject.transform.position).magnitude < hideRange;
+    }
+
+    private HideObject TryGetHideObject(GameObject go)
+    {
+        var hideObject = go.GetComponent<HideObject>();
+        if (hideObject != null)
+            return hideObject;
+        hideObject = go.GetComponentInParent<HideObject>();
+        if (hideObject != null)
+            return hideObject;
+        hideObject = go.GetComponentInChildren<HideObject>();
+        return hideObject;
     }
 }

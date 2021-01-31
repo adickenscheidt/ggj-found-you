@@ -1,7 +1,8 @@
-﻿    public class HouseInteractable : BaseInteractable
+﻿public class HouseInteractable : BaseInteractable
+{
+    public override void Interact()
     {
-        public override void Interact()
-        {
-            // TODO: Destroy bush
-        }
+        base.Interact();
+        // TODO: Destroy bush
     }
+}

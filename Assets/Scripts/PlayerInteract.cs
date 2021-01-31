@@ -40,13 +40,15 @@ public class PlayerInteract : MonoBehaviour
 
     private bool FindClosestInteractable(out BaseInteractable baseInteractable)
     {
-        var colliders = new Collider[10];
+        var colliders = new Collider[15];
         var count = Physics.OverlapSphereNonAlloc(transform.position, interactRange, colliders);
         var closestDistance = float.MaxValue;
         BaseInteractable closestBaseInteractable = null;
         foreach (var foundCollider in colliders)
         {
-            var foundInteractable = foundCollider?.GetComponent<BaseInteractable>();
+            if (foundCollider == null)
+                continue;
+            var foundInteractable = TryGetBaseInteractable(foundCollider.gameObject);
             if (foundInteractable == null || !foundInteractable.IsActive)
                 continue;
             var distanceToInteractable = (foundInteractable.transform.position - transform.position).magnitude;
@@ -58,5 +60,17 @@ public class PlayerInteract : MonoBehaviour
 
         baseInteractable = closestBaseInteractable;
         return baseInteractable != null;
+    }
+
+    private BaseInteractable TryGetBaseInteractable(GameObject go)
+    {
+        var interactable = go.GetComponent<BaseInteractable>();
+        if (interactable != null)
+            return interactable;
+        interactable = go.GetComponentInParent<BaseInteractable>();
+        if (interactable != null)
+            return interactable;
+        interactable = go.GetComponentInChildren<BaseInteractable>();
+        return interactable;
     }
 }
